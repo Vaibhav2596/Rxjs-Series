@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class PromiseComponent {
 
+  callPromise(){
+    console.log("Definate to Console Once clicked on Button Click Me")
+  }
+
 }
