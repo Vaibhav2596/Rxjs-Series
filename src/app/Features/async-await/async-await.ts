@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class AsyncAwait implements OnInit {
 
   ngOnInit(): void {
-    console.log(this.getData());
+    console.log(this.getData().then(data => console.log(data)));
   }
 
   async getData(){
