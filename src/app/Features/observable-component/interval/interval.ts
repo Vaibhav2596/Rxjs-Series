@@ -1,5 +1,5 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { interval, Subscription } from 'rxjs';
+import { interval, Subscription, timer } from 'rxjs';
 import { DesignUtilityService } from '../../services/design-utility-service';
 
 @Component({
@@ -15,7 +15,9 @@ export class Interval implements OnInit {
   designUtilityService = inject(DesignUtilityService);
 
   ngOnInit(): void {
-    const broadCastVideos = interval(1000);
+    // const broadCastVideos = interval(1000);
+    // timer(delay, interval);
+    const broadCastVideos = timer(5000,1000);
 
     this.videoSubscription = broadCastVideos.subscribe(res => {
       console.log(res);
