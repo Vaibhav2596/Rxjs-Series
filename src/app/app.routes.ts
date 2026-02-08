@@ -1,9 +1,20 @@
 import { Routes } from '@angular/router';
 import { PromiseComponent } from './Features/promise/promise';
 import { AsyncAwait } from './Features/async-await/async-await';
+import { ObservableComponent } from './Features/observable-component/observable-component';
+import { ObservableOperatorList } from './Features/observable-component/observable-operator-list/observable-operator-list';
+import { FromEvent } from './Features/observable-component/from-event/from-event';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'promise', pathMatch: 'full' },
   { path: 'promise', component: PromiseComponent },
-  {path:'async-await',component:AsyncAwait}
+  { path: 'async-await', component: AsyncAwait },
+  {
+    path: 'observable',
+    component: ObservableComponent,
+    children: [
+      { path: '', component: ObservableOperatorList },
+      { path: 'fromEvent', component: FromEvent },
+    ],
+  },
 ];
