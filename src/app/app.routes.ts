@@ -4,6 +4,7 @@ import { AsyncAwait } from './Features/async-await/async-await';
 import { ObservableComponent } from './Features/observable-component/observable-component';
 import { ObservableOperatorList } from './Features/observable-component/observable-operator-list/observable-operator-list';
 import { FromEvent } from './Features/observable-component/from-event/from-event';
+import { Interval } from './Features/observable-component/interval/interval';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'promise', pathMatch: 'full' },
@@ -15,6 +16,7 @@ export const routes: Routes = [
     children: [
       { path: '', component: ObservableOperatorList },
       { path: 'fromEvent', component: FromEvent },
+      { path: 'interval', component: Interval },
     ],
   },
 ];
