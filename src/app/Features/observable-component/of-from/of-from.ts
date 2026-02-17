@@ -53,7 +53,7 @@ export class OfFrom implements OnInit {
 
     // From String
 
-        const Obs5 = from('Welcome to Uxtrendz');
+    const Obs5 = from('Welcome to Uxtrendz');
 
     Obs5.subscribe((res) => {
       console.log('from String =>',res);

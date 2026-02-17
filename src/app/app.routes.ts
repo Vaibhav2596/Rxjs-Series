@@ -6,6 +6,7 @@ import { ObservableOperatorList } from './Features/observable-component/observab
 import { FromEvent } from './Features/observable-component/from-event/from-event';
 import { Interval } from './Features/observable-component/interval/interval';
 import { OfFrom } from './Features/observable-component/of-from/of-from';
+import { ToArray } from './Features/observable-component/to-array/to-array';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'promise', pathMatch: 'full' },
@@ -18,7 +19,8 @@ export const routes: Routes = [
       { path: '', component: ObservableOperatorList },
       { path: 'fromEvent', component: FromEvent },
       { path: 'interval', component: Interval },
-      {path: 'of-from', component: OfFrom}
+      {path: 'of-from', component: OfFrom},
+      {path: 'to-array', component: ToArray}
     ],
   },
 ];
