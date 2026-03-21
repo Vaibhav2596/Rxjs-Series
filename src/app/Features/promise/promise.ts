@@ -1,8 +1,9 @@
+import { JsonPipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-promise',
-  imports: [],
+  imports: [JsonPipe],
   templateUrl: './promise.html',
   styleUrl: './promise.scss',
 })
