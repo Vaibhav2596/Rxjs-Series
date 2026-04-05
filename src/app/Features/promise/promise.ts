@@ -67,7 +67,7 @@ export class PromiseComponent implements OnInit {
   }
 
   DellAvailable() {
-    return false;
+    return true;
   }
 
   HpAvailable() {
