@@ -21,7 +21,10 @@ export class ToArray implements OnInit {
     // Ex - 01
     const source = interval(1000);
 
-    this.sourceSub = source.pipe(take(5), toArray()).subscribe((res) => {
+    this.sourceSub = source.pipe(
+      take(5), 
+      toArray()
+    ).subscribe((res) => {
       console.log(res);
 
       // if(res >= 8){
