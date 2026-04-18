@@ -7,6 +7,7 @@ import { FromEvent } from './Features/observable-component/from-event/from-event
 import { Interval } from './Features/observable-component/interval/interval';
 import { OfFrom } from './Features/observable-component/of-from/of-from';
 import { ToArray } from './Features/observable-component/to-array/to-array';
+import { CustomObservable } from './Features/observable-component/custom-observable/custom-observable';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'promise', pathMatch: 'full' },
@@ -20,7 +21,8 @@ export const routes: Routes = [
       { path: 'fromEvent', component: FromEvent },
       { path: 'interval', component: Interval },
       {path: 'of-from', component: OfFrom},
-      {path: 'to-array', component: ToArray}
+      {path: 'to-array', component: ToArray},
+      {path: 'custom-observable', component: CustomObservable}
     ],
   },
 ];
