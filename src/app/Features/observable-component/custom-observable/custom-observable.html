@@ -6,18 +6,21 @@
     <div class="col-md-6">
       <strong>Ex - 01 (Manual)</strong>
       <hr />
-      <ul [ngClass]="techStatus == 'completed' ? 'completed' : techStatus == 'error' ? 'error' : ''" class="techList" id="elContainer">
-      </ul>
+      <ul
+        [ngClass]="techStatus == 'completed' ? 'completed' : techStatus == 'error' ? 'error' : ''"
+        class="techList"
+        id="elContainer"
+      ></ul>
     </div>
 
     <div class="col-md-6">
       <strong>Ex - 02 (Custom Interval Observable)</strong>
       <hr />
-      <ul class="techList">
-        <li>Angular</li>
-        <li>Typescript</li>
-        <li>Html and Css</li>
-      </ul>
+      <ul
+        [ngClass]="techStatus2 == 'completed' ? 'completed' : techStatus2 == 'error' ? 'error' : ''"
+        class="techList"
+        id="elContainer2"
+      ></ul>
     </div>
   </div>
 
@@ -31,8 +34,24 @@
         'Anup', 'Shekhar', 'Sharma', 'Uxtrendz', 'John', 'Alex', 'Robert'
       </p>
       <hr />
-      <p>Current Name : <strong class="text-success">Anup</strong></p>
-      <span class="badge text-bg-success">Success</span>
+      <p>
+        Current Name : <strong>{{ name }}</strong>
+      </p>
+      <span
+        [ngClass]="
+          nameStatus == 'completed'
+            ? 'text-bg-success'
+            : nameStatus == 'error'
+              ? 'text-bg-danger'
+              : 'text-bg-primary'
+        "
+        class="badge"
+        >{{nameStatus == 'completed'
+            ? 'Success'
+            : nameStatus == 'error'
+              ? 'Error'
+              : 'Running'}}</span
+      >
     </div>
   </div>
 </div>
