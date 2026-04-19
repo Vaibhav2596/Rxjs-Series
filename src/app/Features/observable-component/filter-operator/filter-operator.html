@@ -1,0 +1,82 @@
+<div class="my-3">
+  <h2>Filter</h2>
+  <br />
+
+  <div class="row">
+    <div class="col-md-4">
+      <strong>Ex - 01</strong>
+      <hr />
+      <p class="bg-light py-2 px-3 border rounded"><strong>Filter</strong> by length</p>
+      <br />
+      <table class="table">
+        <thead>
+          <tr scope="col">
+            <th>Id</th>
+            <th>Name</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          @for (item of data; track item.id) {
+            <tr scope="row">
+              <td>{{ item.id }}</td>
+              <td>{{ item.name }}</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col-md-4">
+      <strong>Ex - 02</strong>
+      <hr />
+      <p class="bg-light py-2 px-3 border rounded"><strong>Filter</strong> by Gender</p>
+      <br />
+      <table class="table">
+        <thead>
+          <tr scope="col">
+            <th>Id</th>
+            <th>Name</th>
+            <th>Gender</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          @for (item of data2; track item.id) {
+            <tr scope="row">
+              <td>{{ item.id }}</td>
+              <td>{{ item.name }}</td>
+              <td>{{ item.gender }}</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col-md-4">
+      <strong>Ex - 03</strong>
+      <hr />
+      <p class="bg-light py-2 px-3 border rounded"><strong>Filter</strong> by nth item</p>
+      <br />
+      <table class="table">
+        <thead>
+          <tr scope="col">
+            <th>Id</th>
+            <th>Name</th>
+            <th>Gender</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          @for (item of data3; track item.name) {
+            <tr scope="row">
+              <td>{{ item.id }}</td>
+              <td>{{ item.name }}</td>
+              <td>{{ item.gender }}</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
