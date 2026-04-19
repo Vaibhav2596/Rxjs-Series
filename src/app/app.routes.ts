@@ -8,6 +8,7 @@ import { Interval } from './Features/observable-component/interval/interval';
 import { OfFrom } from './Features/observable-component/of-from/of-from';
 import { ToArray } from './Features/observable-component/to-array/to-array';
 import { CustomObservable } from './Features/observable-component/custom-observable/custom-observable';
+import { MapOperator } from './Features/observable-component/map-operator/map-operator';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'promise', pathMatch: 'full' },
@@ -22,7 +23,8 @@ export const routes: Routes = [
       { path: 'interval', component: Interval },
       {path: 'of-from', component: OfFrom},
       {path: 'to-array', component: ToArray},
-      {path: 'custom-observable', component: CustomObservable}
+      {path: 'custom-observable', component: CustomObservable},
+      {path: 'map', component: MapOperator}
     ],
   },
 ];
