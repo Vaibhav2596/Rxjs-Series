@@ -12,6 +12,7 @@ import { MapOperator } from './Features/observable-component/map-operator/map-op
 import { PluckOperator } from './Features/observable-component/pluck-operator/pluck-operator';
 import { FilterOperator } from './Features/observable-component/filter-operator/filter-operator';
 import { TapOperator } from './Features/observable-component/tap-operator/tap-operator';
+import { TakeOperator } from './Features/observable-component/take-operator/take-operator';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'promise', pathMatch: 'full' },
@@ -31,6 +32,7 @@ export const routes: Routes = [
       {path: 'pluck', component: PluckOperator},
       {path: 'filter', component: FilterOperator},
       {path: 'tap', component: TapOperator},
+      {path: 'take', component: TakeOperator},
     ],
   },
 ];

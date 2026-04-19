@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class DesignUtilityService {
   
-  print(val:string,containerId:string){
+  print(val:any,containerId:string){
     let el = document.createElement('li');
     el.innerText = val;
 
