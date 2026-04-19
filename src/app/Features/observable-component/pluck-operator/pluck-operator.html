@@ -1,0 +1,50 @@
+<div class="my-3">
+  <h2>Pluck</h2>
+  <br />
+
+  <div class="row">
+    <div class="col-md-6">
+      <strong>Ex - 01</strong>
+      <hr />
+      <p class="bg-light py-2 px-3 border rounded"><strong>Pluck</strong> by property</p>
+      <br />
+      <table class="table">
+        <thead>
+          <tr scope="col">
+            <th>Name</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          @for (item of data; track item.name) {
+            <tr scope="row">
+              <td>{{ item }}</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <div class="col-md-6">
+      <strong>Ex - 02</strong>
+      <hr />
+      <p class="bg-light py-2 px-3 border rounded"><strong>Pluck</strong> by nested property</p>
+      <br />
+      <table class="table">
+        <thead>
+          <tr scope="col">
+            <th>Job > Title</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          @for (item of data2; track item.name) {
+            <tr scope="row">
+              <td>{{ item }}</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
