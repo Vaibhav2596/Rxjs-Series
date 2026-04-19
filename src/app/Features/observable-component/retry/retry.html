@@ -1,0 +1,54 @@
+<div class="my-3">
+  <h2>Retry, RetryWhen, Scan and Delay</h2>
+  <br />
+  <div class="row">
+    <div class="col-md-6">
+      @if (person?.id) {
+        <table class="table">
+          <tbody>
+            <tr scope="row">
+              <th>Id</th>
+              <td>{{ person.id }}</td>
+            </tr>
+            <tr scope="row">
+              <th>Name</th>
+              <td>{{ person.name }}</td>
+            </tr>
+            <tr scope="row">
+              <th>Email</th>
+              <td>{{ person.email }}</td>
+            </tr>
+            <tr scope="row">
+              <th>Phone</th>
+              <td>{{ person.phone }}</td>
+            </tr>
+          </tbody>
+        </table>
+      }
+      <p>
+        Status:
+        <strong
+          [ngClass]="{
+            'text-success': status == 'Data Fetched',
+            'text-danger': status == 'Problem Fetching Data',
+          }"
+          >{{ status }}
+          @if (fetching) {
+            <span class="spinner-grow text-warning" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </span>
+          }
+        </strong>
+      </p>
+    </div>
+  </div>
+  <!-- <button class="btn btn-primary" >Fetch Details</button> -->
+  <button class="btn btn-primary" (click)="fetchDetails()" type="button">
+    @if (fetching) {
+      <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+      <span role="status"> Fetching...</span>
+    } @else {
+      <span role="status"> Fetch Details</span>
+    }
+  </button>
+</div>

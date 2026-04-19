@@ -13,6 +13,7 @@ import { PluckOperator } from './Features/observable-component/pluck-operator/pl
 import { FilterOperator } from './Features/observable-component/filter-operator/filter-operator';
 import { TapOperator } from './Features/observable-component/tap-operator/tap-operator';
 import { TakeOperator } from './Features/observable-component/take-operator/take-operator';
+import { Retry } from './Features/observable-component/retry/retry';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'promise', pathMatch: 'full' },
@@ -25,14 +26,15 @@ export const routes: Routes = [
       { path: '', component: ObservableOperatorList },
       { path: 'fromEvent', component: FromEvent },
       { path: 'interval', component: Interval },
-      {path: 'of-from', component: OfFrom},
-      {path: 'to-array', component: ToArray},
-      {path: 'custom-observable', component: CustomObservable},
-      {path: 'map', component: MapOperator},
-      {path: 'pluck', component: PluckOperator},
-      {path: 'filter', component: FilterOperator},
-      {path: 'tap', component: TapOperator},
-      {path: 'take', component: TakeOperator},
+      { path: 'of-from', component: OfFrom },
+      { path: 'to-array', component: ToArray },
+      { path: 'custom-observable', component: CustomObservable },
+      { path: 'map', component: MapOperator },
+      { path: 'pluck', component: PluckOperator },
+      { path: 'filter', component: FilterOperator },
+      { path: 'tap', component: TapOperator },
+      { path: 'take', component: TakeOperator },
+      { path: 'retry', component: Retry },
     ],
   },
 ];
