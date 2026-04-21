@@ -27,9 +27,9 @@ export class Retry implements OnInit {
         retryWhen((err) =>
           err.pipe(
             delay(3000),
-            scan((retryCount,error) => {
+            scan((retryCount) => {
               if (retryCount >= 5) {
-                throw error;
+                throw err;
               } else {
                 retryCount = retryCount + 1;
                 console.log('retryCount => ' + retryCount);
