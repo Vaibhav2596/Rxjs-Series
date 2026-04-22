@@ -1,11 +1,11 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, inject, OnInit } from '@angular/core';
 import { delay, map, of, retry, retryWhen, scan, tap } from 'rxjs';
-import { NgClass, NgIf } from '@angular/common';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-retry',
-  imports: [NgClass, NgIf],
+  imports: [NgClass],
   templateUrl: './retry.html',
   styleUrl: './retry.scss',
 })
