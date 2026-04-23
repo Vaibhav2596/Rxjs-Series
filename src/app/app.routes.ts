@@ -15,6 +15,7 @@ import { TapOperator } from './Features/observable-component/tap-operator/tap-op
 import { TakeOperator } from './Features/observable-component/take-operator/take-operator';
 import { Retry } from './Features/observable-component/retry/retry';
 import { Debouncetime } from './Features/observable-component/debouncetime/debouncetime';
+import { SubjectBehavior } from './Features/observable-component/subject-behavior/subject-behavior';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'promise', pathMatch: 'full' },
@@ -37,6 +38,7 @@ export const routes: Routes = [
       { path: 'take', component: TakeOperator },
       { path: 'retry', component: Retry },
       { path: 'debouncetime', component: Debouncetime },
+      { path: 'subject', component: SubjectBehavior },
     ],
   },
 ];

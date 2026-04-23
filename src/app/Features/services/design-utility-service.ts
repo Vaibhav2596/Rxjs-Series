@@ -1,11 +1,14 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class DesignUtilityService {
-  
-  print(val:any,containerId:string){
+  exclusive = new Subject<boolean>();
+  userName = new BehaviorSubject<string>('Anup');
+
+  print(val: any, containerId: string) {
     let el = document.createElement('li');
     el.innerText = val;
 
