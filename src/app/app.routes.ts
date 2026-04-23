@@ -17,6 +17,7 @@ import { Retry } from './Features/observable-component/retry/retry';
 import { Debouncetime } from './Features/observable-component/debouncetime/debouncetime';
 import { SubjectBehavior } from './Features/observable-component/subject-behavior/subject-behavior';
 import { ReplaySubject } from './Features/observable-component/replay-subject/replay-subject';
+import { AsyncSubject } from './Features/observable-component/async-subject/async-subject';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'promise', pathMatch: 'full' },
@@ -41,6 +42,7 @@ export const routes: Routes = [
       { path: 'debouncetime', component: Debouncetime },
       { path: 'subject', component: SubjectBehavior },
       { path: 'replaysubject', component: ReplaySubject },
+      { path: 'asyncsubject', component: AsyncSubject },
     ],
   },
 ];
