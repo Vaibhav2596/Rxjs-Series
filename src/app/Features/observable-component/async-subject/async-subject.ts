@@ -5,7 +5,7 @@ import { interval, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-async-subject',
-  imports: [NgClass],
+  imports: [],
   templateUrl: './async-subject.html',
   styleUrl: './async-subject.scss',
 })

@@ -18,6 +18,8 @@ import { Debouncetime } from './Features/observable-component/debouncetime/debou
 import { SubjectBehavior } from './Features/observable-component/subject-behavior/subject-behavior';
 import { ReplaySubject } from './Features/observable-component/replay-subject/replay-subject';
 import { AsyncSubject } from './Features/observable-component/async-subject/async-subject';
+import { Concat } from './Features/observable-component/concat/concat';
+import { Merge } from './Features/observable-component/merge/merge';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'promise', pathMatch: 'full' },
@@ -43,6 +45,8 @@ export const routes: Routes = [
       { path: 'subject', component: SubjectBehavior },
       { path: 'replaysubject', component: ReplaySubject },
       { path: 'asyncsubject', component: AsyncSubject },
+      { path: 'concat', component: Concat },
+      { path: 'merge', component: Merge },
     ],
   },
 ];
