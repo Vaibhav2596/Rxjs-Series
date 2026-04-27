@@ -21,6 +21,7 @@ import { AsyncSubject } from './Features/observable-component/async-subject/asyn
 import { Concat } from './Features/observable-component/concat/concat';
 import { Merge } from './Features/observable-component/merge/merge';
 import { Mergemap } from './Features/observable-component/mergemap/mergemap';
+import { ConcatMap } from './Features/observable-component/concat-map/concat-map';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'promise', pathMatch: 'full' },
@@ -49,6 +50,7 @@ export const routes: Routes = [
       { path: 'concat', component: Concat },
       { path: 'merge', component: Merge },
       { path: 'mergemap', component: Mergemap },
+      { path: 'concatmap', component: ConcatMap },
     ],
   },
 ];
