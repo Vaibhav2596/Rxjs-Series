@@ -22,6 +22,7 @@ import { Concat } from './Features/observable-component/concat/concat';
 import { Merge } from './Features/observable-component/merge/merge';
 import { Mergemap } from './Features/observable-component/mergemap/mergemap';
 import { ConcatMap } from './Features/observable-component/concat-map/concat-map';
+import { ConcatMap2 } from './Features/observable-component/concat-map2/concat-map2';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'promise', pathMatch: 'full' },
@@ -51,6 +52,7 @@ export const routes: Routes = [
       { path: 'merge', component: Merge },
       { path: 'mergemap', component: Mergemap },
       { path: 'concatmap', component: ConcatMap },
+      { path: 'concatmap2', component: ConcatMap2 },
     ],
   },
 ];
