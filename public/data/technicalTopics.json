@@ -1,0 +1,61 @@
+[
+  { "thumbnail": "https://images.unsplash.com/photo-1555066931-4365d14bab8c", "title": "Angular", "description": "Angular is a robust framework for building enterprise web apps." },
+  { "thumbnail": "https://images.unsplash.com/photo-1498050108023-c5249f4df085", "title": "Angular", "description": "Angular uses TypeScript and component-based architecture." },
+  { "thumbnail": "https://images.unsplash.com/photo-1518779578993-ec3579fee39f", "title": "Angular", "description": "Angular supports routing, forms, and HTTP out of the box." },
+  { "thumbnail": "https://images.unsplash.com/photo-1519389950473-47ba0277781c", "title": "Angular", "description": "Angular is ideal for scalable frontend applications." },
+  { "thumbnail": "https://images.unsplash.com/photo-1519389950473-47ba0277781c", "title": "Angular", "description": "Angular CLI simplifies development workflows." },
+
+  { "thumbnail": "https://images.unsplash.com/photo-1504639725590-34d0984388bd", "title": "RxJS", "description": "RxJS enables reactive programming using Observables." },
+  { "thumbnail": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4", "title": "RxJS", "description": "RxJS is widely used in Angular applications." },
+  { "thumbnail": "https://images.unsplash.com/photo-1505685296765-3a2736de412f", "title": "RxJS", "description": "Operators in RxJS transform and filter streams." },
+  { "thumbnail": "https://images.unsplash.com/photo-1484417894907-623942c8ee29", "title": "RxJS", "description": "RxJS handles async events efficiently." },
+  { "thumbnail": "https://images.unsplash.com/photo-1492724441997-5dc865305da7", "title": "RxJS", "description": "Reactive extensions simplify async logic." },
+
+  { "thumbnail": "https://images.unsplash.com/photo-1519389950473-47ba0277781c", "title": "ASP.NET Core", "description": "ASP.NET Core is cross-platform for web APIs." },
+  { "thumbnail": "https://images.unsplash.com/photo-1522071820081-009f0129c71c", "title": "ASP.NET Core", "description": "It supports middleware and dependency injection." },
+  { "thumbnail": "https://images.unsplash.com/photo-1555949963-aa79dcee981c", "title": "ASP.NET Core", "description": "Optimized for performance and cloud apps." },
+  { "thumbnail": "https://images.unsplash.com/photo-1519389950473-47ba0277781c", "title": "ASP.NET Core", "description": "Integrates with Entity Framework." },
+  { "thumbnail": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6", "title": "ASP.NET Core", "description": "Supports REST APIs and MVC architecture." },
+
+  { "thumbnail": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6", "title": "React", "description": "React builds fast and interactive UIs." },
+  { "thumbnail": "https://images.unsplash.com/photo-1502880195258-0f8f9c0f1e6e", "title": "React", "description": "Uses virtual DOM for performance." },
+  { "thumbnail": "https://images.unsplash.com/photo-1492724441997-5dc865305da7", "title": "React", "description": "Hooks simplify state management." },
+  { "thumbnail": "https://images.unsplash.com/photo-1498050108023-c5249f4df085", "title": "React", "description": "Ideal for SPA development." },
+  { "thumbnail": "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d", "title": "React", "description": "Component-based architecture." },
+
+  { "thumbnail": "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d", "title": "Node.js", "description": "Node.js runs JavaScript on servers." },
+  { "thumbnail": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d", "title": "Node.js", "description": "Event-driven and non-blocking." },
+  { "thumbnail": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4", "title": "Node.js", "description": "Used for backend APIs." },
+  { "thumbnail": "https://images.unsplash.com/photo-1504639725590-34d0984388bd", "title": "Node.js", "description": "Works well with Express." },
+  { "thumbnail": "https://images.unsplash.com/photo-1498050108023-c5249f4df085", "title": "Node.js", "description": "Highly scalable runtime." },
+
+  { "thumbnail": "https://images.unsplash.com/photo-1526378722484-bd91ca387e72", "title": "JavaScript", "description": "Core language of the web." },
+  { "thumbnail": "https://images.unsplash.com/photo-1498050108023-c5249f4df085", "title": "JavaScript", "description": "Supports async programming." },
+  { "thumbnail": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4", "title": "JavaScript", "description": "Used for frontend and backend." },
+  { "thumbnail": "https://images.unsplash.com/photo-1504639725590-34d0984388bd", "title": "JavaScript", "description": "Flexible and widely adopted." },
+  { "thumbnail": "https://images.unsplash.com/photo-1484417894907-623942c8ee29", "title": "JavaScript", "description": "Supports ES6+ features." },
+
+  { "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475", "title": "TypeScript", "description": "Adds static typing to JavaScript." },
+  { "thumbnail": "https://images.unsplash.com/photo-1498050108023-c5249f4df085", "title": "TypeScript", "description": "Improves code maintainability." },
+  { "thumbnail": "https://images.unsplash.com/photo-1504639725590-34d0984388bd", "title": "TypeScript", "description": "Used heavily in Angular." },
+  { "thumbnail": "https://images.unsplash.com/photo-1484417894907-623942c8ee29", "title": "TypeScript", "description": "Supports modern JS features." },
+  { "thumbnail": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4", "title": "TypeScript", "description": "Great for large-scale apps." },
+
+  { "thumbnail": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31", "title": "Docker", "description": "Containerization platform." },
+  { "thumbnail": "https://images.unsplash.com/photo-1526378722484-bd91ca387e72", "title": "Docker", "description": "Packages apps with dependencies." },
+  { "thumbnail": "https://images.unsplash.com/photo-1504639725590-34d0984388bd", "title": "Docker", "description": "Improves deployment consistency." },
+  { "thumbnail": "https://images.unsplash.com/photo-1498050108023-c5249f4df085", "title": "Docker", "description": "Lightweight containers." },
+  { "thumbnail": "https://images.unsplash.com/photo-1519389950473-47ba0277781c", "title": "Docker", "description": "Works with Kubernetes." },
+
+  { "thumbnail": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b", "title": "Kubernetes", "description": "Container orchestration system." },
+  { "thumbnail": "https://images.unsplash.com/photo-1526378722484-bd91ca387e72", "title": "Kubernetes", "description": "Automates scaling and deployment." },
+  { "thumbnail": "https://images.unsplash.com/photo-1519389950473-47ba0277781c", "title": "Kubernetes", "description": "Manages container clusters." },
+  { "thumbnail": "https://images.unsplash.com/photo-1504639725590-34d0984388bd", "title": "Kubernetes", "description": "Used in cloud-native apps." },
+  { "thumbnail": "https://images.unsplash.com/photo-1498050108023-c5249f4df085", "title": "Kubernetes", "description": "Highly scalable system." },
+
+  { "thumbnail": "https://images.unsplash.com/photo-1555949963-aa79dcee981c", "title": "Python", "description": "Popular for AI and data science." },
+  { "thumbnail": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4", "title": "Python", "description": "Simple and readable syntax." },
+  { "thumbnail": "https://images.unsplash.com/photo-1526378722484-bd91ca387e72", "title": "Python", "description": "Used in web and automation." },
+  { "thumbnail": "https://images.unsplash.com/photo-1504639725590-34d0984388bd", "title": "Python", "description": "Supports multiple paradigms." },
+  { "thumbnail": "https://images.unsplash.com/photo-1498050108023-c5249f4df085", "title": "Python", "description": "Extensive libraries ecosystem." }
+]

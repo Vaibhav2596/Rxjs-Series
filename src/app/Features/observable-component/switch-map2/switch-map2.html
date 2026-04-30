@@ -1,0 +1,53 @@
+<div class="my-3">
+  <h2>SwitchMap</h2>
+  <br />
+  <h5>Search Uxtrendz Videos</h5>
+  <form #searchForm="ngForm">
+    <div class="mt-3">
+      <input
+        type="text"
+        class="form-control form-control-lg"
+        required
+        name="searchTerm"
+        autocomplete="off"
+        ngModel
+      />
+    </div>
+  </form>
+
+  <br />
+  <hr />
+
+  @if (searchResults) {
+    <div class="results">
+      <div class="d-flex">
+        <h5>Search Results</h5>
+        <span class="ms-auto text-muted">{{ searchResults?.length ?? 0 }} Results found...</span>
+      </div>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Thumbnail</th>
+            <th scope="col">Title & Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (item of searchResults; track $index) {
+            <tr>
+              <th scope="row">{{ $index + 1 }}</th>
+              <td>
+                <img [src]="item.thumbnail" [alt]="item.title" width="120" />
+              </td>
+              <td>
+                <strong>{{ item.title }}</strong>
+                <p>{{ item.description }}</p>
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  }
+</div>
