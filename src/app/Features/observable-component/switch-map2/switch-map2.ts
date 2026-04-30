@@ -23,14 +23,15 @@ export class SwitchMap2 implements OnInit, AfterViewInit {
     formValue
       ?.pipe(
         map((form) => form.searchTerm?.trim() || ''),
-        filter((term: string) => term.length > 0),
         // pluck('searchTerm'),
+        filter((term: string) => term.length > 0),
         debounceTime(500),
         distinctUntilChanged(),
         switchMap((data) => this._searchService.getSearchData(data)),
       )
       .subscribe((res) => {
-        console.log(res);
+        console.log(Object.keys(res));
+        console.log(Object.keys(res).length);
         this.searchResults = res;
       });
   }
